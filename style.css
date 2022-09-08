@@ -14,16 +14,19 @@ body {
 
 main {
     display: flex;
+    min-height: 100vh;
+    border: 3px solid black;
 }
 
 .first-container {
     border: 3px solid yellow;
-    width: 70%;
+    max-width: 70%;
     font-size: 1.5rem;
-    height: 100vh;
 }
 
 .second-container {
+    display: flex;
+    flex-direction: column;
     border: 3px solid green;
     width: 30%;
     font-size: 30px;
@@ -31,6 +34,8 @@ main {
 }
 .exa-div {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     margin-top: 20px;
     padding: 10px;
@@ -55,8 +60,8 @@ main {
     justify-content: center;
 }
 
-.box{
-    width: 150px;
+input {
+    width: 40%;
     height: 40px;
     background-color:rgb(5, 70, 70);
     border: 1px solid black;
@@ -64,15 +69,16 @@ main {
     border-top: none;
     border-left: none;
     border-right: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.box:focus {
+input:focus {
     outline: none;
     border-top: none;
     border-left: none;
     border-right: none;
 }
+
 .btn-div{
     text-align: center;
 }
@@ -83,8 +89,12 @@ main {
     margin-top: 20px;
     border: none;
     border-radius: 10px;
-
+    transition: all 1s;
 }
+
 .btn:hover{
-    color:rgb(5, 70, 70);
+    background-color: rgb(5, 70, 70);
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
 }
