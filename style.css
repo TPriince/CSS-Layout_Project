@@ -73,10 +73,18 @@ main {
     border-left: none;
     border-right: none;
 }
+.btn-div{
+    text-align: center;
+}
 
 .btn{
     width: 150px;
     height: 40px;
     margin-top: 20px;
-    margin-left: 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    color:rgb(5, 70, 70);
 }
